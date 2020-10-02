@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login pag</title>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCmsj45wADm3ItyFbCHk624INfAi-oGCLk",
+        authDomain: "chatapp-735ea.firebaseapp.com",
+        databaseURL: "https://chatapp-735ea.firebaseio.com",
+        projectId: "chatapp-735ea",
+        storageBucket: "chatapp-735ea.appspot.com",
+        messagingSenderId: "630298978694",
+        appId: "1:630298978694:web:5ab42b6545fade598b2407",
+        measurementId: "G-JJHC7QN5KJ"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    
+
+</head>
+<body>
+    <input type="text" placeholder="mail" id="mail"><br>
+    <input type="password" placeholder="password" id="pass"><br>
+    <button onclick="signup()">Submit</button><hr>
+
+    <input type="text" placeholder="mail" id="mail-login"><br>
+    <input type="password" placeholder="password" id="pass-login"><br>
+    <button onclick="login()">Submit</button>
+    <button onclick="signout()">Signout</button>
+    <script src="app2.js"></script>
+
+</html>
